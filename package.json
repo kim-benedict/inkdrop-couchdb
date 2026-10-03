@@ -1,0 +1,18 @@
+{
+  "name": "inkdrop-couchdb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Self-hosted Inkdrop sync with bounded storage and local image optimization.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "install-client": "node scripts/install-client.cjs",
+    "uninstall-client": "node scripts/install-client.cjs --uninstall",
+    "test": "node --test test/*.test.cjs && python3 -m unittest discover -s test -p '*_test.py'"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "license": "MIT"
+}

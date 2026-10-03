@@ -1,0 +1,14 @@
+{$INKDROP_HOST} {
+    @allowed path / /_session /_up /inkdropnotes /inkdropnotes/*
+    handle @allowed {
+        import /etc/caddy/inkdrop-storage-guard.caddy
+        header Cache-Control "private, no-store"
+        header X-Content-Type-Options "nosniff"
+        reverse_proxy 127.0.0.1:5984 {
+            header_up -X-Auth-CouchDB-UserName
+            header_up -X-Auth-CouchDB-Roles
+            header_up -X-Auth-CouchDB-Token
+        }
+    }
+    respond "Not found" 404
+}

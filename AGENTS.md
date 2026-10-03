@@ -1,0 +1,1 @@
+Read `rule/operations.xml` before changing a deployment. Keep credentials and deployment-specific settings outside this repository. Run `npm test` for client or guard changes. Do not provision cloud resources as a test.

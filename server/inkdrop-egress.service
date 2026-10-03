@@ -1,0 +1,17 @@
+[Unit]
+Description=Persistent monthly outbound guard
+DefaultDependencies=no
+After=local-fs.target
+Before=network-pre.target docker.service caddy.service
+Wants=network-pre.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+ExecStart=/usr/bin/python3 /usr/local/sbin/inkdrop-egress.py
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=20
+
+[Install]
+WantedBy=multi-user.target
