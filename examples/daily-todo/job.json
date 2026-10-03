@@ -1,0 +1,9 @@
+{
+  "id": "daily-todo",
+  "notebook": "todo",
+  "timezone": "Asia/Seoul",
+  "calendar": "*-*-* 00:00:00",
+  "period": "daily",
+  "title_prefix": "",
+  "template": "template.md"
+}

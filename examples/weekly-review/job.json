@@ -1,0 +1,9 @@
+{
+  "id": "weekly-review",
+  "notebook": "todo",
+  "timezone": "Asia/Seoul",
+  "calendar": "Mon *-*-* 09:00:00",
+  "period": "weekly",
+  "title_prefix": "Review ",
+  "template": "template.md"
+}

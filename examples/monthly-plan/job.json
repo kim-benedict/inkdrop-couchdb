@@ -1,0 +1,9 @@
+{
+  "id": "monthly-plan",
+  "notebook": "todo",
+  "timezone": "Asia/Seoul",
+  "calendar": "*-*-01 09:00:00",
+  "period": "monthly",
+  "title_prefix": "Plan ",
+  "template": "template.md"
+}

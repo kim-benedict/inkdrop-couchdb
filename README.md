@@ -27,6 +27,10 @@ The installer prompts for separate admin, sync, and reader passwords. Use `inkdr
 
 For an IPv6-only `e2-micro` deployment, follow [Google Cloud setup](docs/google-cloud.md). Free-tier eligibility is conditional. The outbound guard limits traffic; it is not a billing cap.
 
+## Scheduled notes
+
+Create daily todos, weekly reviews, or monthly plans on the server. Each job uses an editable checklist and a systemd timer. See [examples and installation](examples/README.md).
+
 ## Tools
 
 ```sh
